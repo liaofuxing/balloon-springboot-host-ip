@@ -1,10 +1,10 @@
 server:
   #端口号
-  port: 8080
+  port: 8095
 spring:
   datasource:
     driver-class-name: org.sqlite.JDBC
-    url: jdbc:sqlite:E:/sqlitedb/ip-address.db
+    url: jdbc:sqlite:sqlitedb/ip-address.db
     username:
     password: 123456
     ### sqlite需要自己配置连接方式
@@ -44,7 +44,8 @@ balloon:
   mail:
     enabled: true
     from: 597429743@qq.com # 邮件发送人
-    to: 977626570@qq.com,liaofuxing@outlook.com  # 收件人
+    to: 977626570@qq.com,liyc@thinking-star.com,thomaschen750215@126.com,thinkingstar2020@126.com # 收件人
+    # to: 977626570@qq.com
     subject: WUHAN IP HOSTNAME # 邮件主题
 
 
