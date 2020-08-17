@@ -2,7 +2,6 @@ package com.ts.address;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
@@ -12,8 +11,9 @@ import org.springframework.context.annotation.ComponentScan;
  *
  * @author liaofuxing
  */
+//@SpringBootApplication(exclude = {UserDetailsServiceAutoConfiguration.class })
 @ComponentScan({"com.balloon.springboot.core.exception", "com.ts"})
-@SpringBootApplication(exclude = {UserDetailsServiceAutoConfiguration.class })
+@SpringBootApplication
 public class HostAddressApplication {
 
     public static void main(String[] args) {

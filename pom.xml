@@ -18,6 +18,7 @@
         <java.version>1.8</java.version>
         <!-- 跳过测试 -->
         <skipTests>true</skipTests>
+        <balloon.springboot.version>0.1.0</balloon.springboot.version>
     </properties>
 
     <dependencies>
@@ -35,7 +36,13 @@
         <dependency>
             <groupId>com.balloon</groupId>
             <artifactId>balloon-springboot-starter</artifactId>
-            <version>0.1.0</version>
+            <version>${balloon.springboot.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.balloon</groupId>
+                    <artifactId>balloon-springboot-security</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
