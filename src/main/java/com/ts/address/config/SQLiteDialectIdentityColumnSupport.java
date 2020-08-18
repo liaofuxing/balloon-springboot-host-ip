@@ -3,7 +3,7 @@ package com.ts.address.config;
 import org.hibernate.dialect.identity.IdentityColumnSupportImpl;
 
 /**
- * @author wuweifeng wrote on 2018/3/2.
+ * @author liaofuxing
  */
 public class SQLiteDialectIdentityColumnSupport extends IdentityColumnSupportImpl {
     public SQLiteDialectIdentityColumnSupport() {

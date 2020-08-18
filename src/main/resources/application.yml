@@ -4,7 +4,7 @@ server:
 spring:
   datasource:
     driver-class-name: org.sqlite.JDBC
-    url: jdbc:sqlite:E:/sqlitedb/ip-address.db
+    url: jdbc:sqlite:E:/sqlitedb/ip-address.sqlite3
     username:
     password: 123456
     ### sqlite需要自己配置连接方式

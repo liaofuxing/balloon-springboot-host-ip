@@ -25,7 +25,7 @@ import java.sql.SQLException;
 import java.sql.Types;
 
 /**
- * @author wuweifeng wrote on 2018/3/2.
+ * @author liaofuxing
  */
 public class SQLiteDialect extends Dialect {
     private final UniqueDelegate uniqueDelegate;
