@@ -48,14 +48,13 @@ public class HostScheduledService {
         subject.add(hostObServer);
         subject.add(hostUpdateObServer);
     }
-     // 间隔5秒执行
-//      @Scheduled(cron = "0/20 * * * * ? ")
+     // 间隔20秒执行
+     // @Scheduled(cron = "0/20 * * * * ? ")
      // 间隔 30分钟
     @Scheduled(cron = "0 0/30 * * * ?")
     public void getHost() throws IOException, ExecutionException, InterruptedException {
         logger.info("------------------自动任务开始执行-----------------------");
         HostInfo localHost = getLocalHost();
-        logger.info("本机IP是:{}",localHost.getHostAddress());
         HostInfo hostInfo = hostInfoService.getHostInfo();
         if(hostInfo != null){
             if (!localHost.getHostAddress().equals(hostInfo.getHostAddress())) {

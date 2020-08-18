@@ -1,6 +1,8 @@
 package com.ts.address.host.entity;
 
+import com.balloon.springboot.core.entity.BaseEntity;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Entity;
@@ -11,7 +13,8 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "host_info")
 @Data
-public class HostInfo {
+@EqualsAndHashCode(callSuper = true)
+public class HostInfo extends BaseEntity {
     @Id
     @GeneratedValue(generator = "id")
     @GenericGenerator(name="id", strategy="org.hibernate.id.UUIDGenerator")
@@ -19,7 +22,6 @@ public class HostInfo {
     private String hostAddress;
     private String hostName;
     private String oldHostAddress;
-    private String updateTime;
 
     public HostInfo(){
     }

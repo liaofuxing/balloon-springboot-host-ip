@@ -1,4 +1,4 @@
-package com.ts.address.config;
+package com.ts.address.sqlite;
 
 import org.hibernate.boot.MetadataBuilder;
 import org.hibernate.boot.registry.StandardServiceRegistry;

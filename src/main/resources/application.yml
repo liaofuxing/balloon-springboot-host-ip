@@ -9,7 +9,7 @@ spring:
     password: 123456
     ### sqlite需要自己配置连接方式
   jpa:
-    database-platform: com.ts.address.config.SQLiteDialect
+    database-platform: com.ts.address.sqlite.SQLiteDialect
     hibernate:
       ddl-auto: update
     show-sql: true
@@ -33,7 +33,7 @@ spring:
     properties.mail.smtp.starttls.enable: true
     properties.mail.smtp.starttls.required: true
     properties.mail.smtp.ssl.enable: true
-    default-encoding: utf-8
+    default-encoding: UTF-8
 
 # 扩张配置
 balloon:
@@ -45,7 +45,7 @@ balloon:
     enabled: true
     from: 597429743@qq.com # 邮件发送人
     to: 977626570@qq.com,liyc@thinking-star.com,thomaschen750215@126.com,thinkingstar2020@126.com # 收件人
-    # to: 977626570@qq.com
+#    to: 977626570@qq.com
     subject: WUHAN IP HOSTNAME # 邮件主题
 
 

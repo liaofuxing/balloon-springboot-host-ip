@@ -1,4 +1,4 @@
-package com.ts.address.config;
+package com.ts.address.sqlite;
 
 import org.hibernate.JDBCException;
 import org.hibernate.ScrollMode;
